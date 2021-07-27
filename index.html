@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survey Form</title>
+<style>
+input[type=text], select {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=number], select {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #CD5C5C;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #F08080;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #FAFAD2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<center><h1> Vaccination Survey Form</h1></center>
+
+<div><center>
+  <form>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter name"><br>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter last name"><br>
+
+    <label for="age">Age</label>
+    <input type="text" id="age" name="age" placeholder="Enter your age"><br>
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+    </select><br>
+
+    <label for="age">Are you vaccinated yet?</label>
+    <select id="vaccinated" name="vaccinated">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select><br>
+
+    <label for="age">How many vaccine dose have you completed?</label>
+    <select id="dose" name="dose">
+      <option value="2">1</option>
+      <option value="2">2</option>
+    </select><br>
+
+    <label for="age">Which vaccine did you take?</label>
+    <select id="type" name="type">
+      <option value="covid-shield">Covidshield</option>
+      <option value="cova">Covaxin</option>
+    </select><br>
+
+    <p>Did you face any health issues after getting vaccinated?</p>
+    <label for="yes">Yes</label>
+    <input type="radio" name="gen" id="male" value="m">
+    <label for="no">No</label>
+    <input type="radio" name="gen" id="female" value="f"><br>
+
+    <label for="age">If yes, what health issues did you face?</label>
+    <select id="issues" name="issues">
+      <option value="weakness">Weakness</option>
+      <option value="fever">Fever</option>
+      <option value="pain">Hand pain</option>
+      <option value="dizziness">Dizziness</option>
+      <option value="other">other</option>
+    </select><br>
+
+  
+    <input type="submit" value="Submit">
+  </form></center>
+</div>
+
+</body>
+</html>
